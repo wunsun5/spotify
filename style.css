@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.spotify{
+    position: relative;
+    width: 30em;
+    height: 30em;
+    background-color: #1db954;
+    border-radius: 50%;
+    transform: rotate(9deg);
+}
+
+.line{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top{
+    width: 25em;
+    height: 20em;
+    border: 2.5em solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    top: 6em;
+}
+
+.top::before, .top::after{
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: white;
+    border-radius: 47%;
+    top: .8em;
+}
+
+.top::before{
+    left: 1.5em;
+}
+
+.top::after{
+    right: 1.5em;
+}
+
+.middle{
+    width: 18em;
+    height: 15em;
+    border: 2.2em solid transparent;
+    border-radius: 50%;
+    border-top-color: white;
+    top: 11.5em;
+}
+
+.middle::before, .middle::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 47%;
+    top: .5em;
+}
+
+.middle::before{
+    left: .5em;
+}
+
+.middle::after{
+    right: .5em;
+}
+
+.bottom{
+    width: 12em;
+    height: 9.6em;
+    border: 2em solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    top: 17em;
+}
+
+.bottom::before, .bottom::after{
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 47%;
+    top: -.2em;
+}
+
+.bottom::after{
+    right: 0;
+}
+
+img[alt="www.000webhost.com"]{
+    display: none !important;
+}
